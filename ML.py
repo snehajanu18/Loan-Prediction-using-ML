@@ -5,11 +5,11 @@ import joblib
 st.title("Loan Prediction App (3 Models)")
 
 # Load from local paths
-lr_model = joblib.load("/Users/sneha_janu18/Downloads/logistic_regression_model.pkl")
-rf_model = joblib.load("/Users/sneha_janu18/Downloads/random_forest_model.pkl")
-dt_model = joblib.load("/Users/sneha_janu18/Downloads/decision_tree_model.pkl")
-scaler = joblib.load("/Users/sneha_janu18/Downloads/scaler.pkl")
-feature_columns = joblib.load("/Users/sneha_janu18/Downloads/feature_columns.pkl")
+lr_model = joblib.load("logistic_regression_model.pkl")
+rf_model = joblib.load("random_forest_model.pkl")
+dt_model = joblib.load("decision_tree_model.pkl")
+scaler = joblib.load("scaler.pkl")
+feature_columns = joblib.load("feature_columns.pkl")
 
 # Inputs
 ApplicantIncome = st.number_input("Applicant Income", min_value=0)
