@@ -3,7 +3,6 @@ import numpy as np
 import joblib
 
 st.title("Loan Prediction App (3 Models)")
-
 # Load from local paths
 lr_model = joblib.load("logistic_regression_model.pkl")
 rf_model = joblib.load("random_forest_model.pkl")
@@ -24,7 +23,6 @@ Dependents = st.selectbox("Dependents", ["0", "1", "2", "3+"])
 Education = st.selectbox("Education", ["Graduate", "Not Graduate"])
 Self_Employed = st.selectbox("Self Employed", ["Yes", "No"])
 Property_Area = st.selectbox("Property Area", ["Urban", "Semiurban", "Rural"])
-
 # Encoding
 input_dict = {
     "ApplicantIncome": ApplicantIncome,
